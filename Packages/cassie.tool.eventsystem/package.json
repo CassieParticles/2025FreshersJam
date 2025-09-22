@@ -1,0 +1,11 @@
+{
+  "name": "cassie.tool.eventsystem",
+  "displayName": "Event System",
+  "version": "1.0.0",
+  "description": "An event system for global events, promoting decoupling using the observer pattern.\nBased on design made in https://youtu.be/J01z1F-du-E",
+  "unity": "6000.0",
+  "author": {
+    "name": "Cassie Parsons",
+    "url": "https://github.com/CassieParticles"
+  }
+}
