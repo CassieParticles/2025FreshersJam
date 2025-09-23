@@ -4,21 +4,17 @@ public class FlyMovement : ABulletMovement
 {
     public override void InitBullet(Vector2 position, Vector2 direction, float speed)
     {
-        transform.position = position; 
-        this.direction = direction;
-        this.speed = speed;
-
-        gameObject.SetActive(true);
+        base.InitBullet(position, direction, speed);
     }
 
     public override void ClearBullet()
     {
-        gameObject.SetActive(false);
+        base.ClearBullet();
     }
 
-    private void FixedUpdate()
+    public new void FixedUpdate()
     {
-        transform.position += speed * Time.fixedDeltaTime * (Vector3)direction;
+        base.FixedUpdate();
     }
 }
 
