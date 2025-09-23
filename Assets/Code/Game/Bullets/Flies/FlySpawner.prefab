@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7073767307722945864}
   - component: {fileID: 6671310591356028958}
+  - component: {fileID: -6820736357205321558}
   m_Layer: 0
   m_Name: FlySpawner
   m_TagString: Untagged
@@ -46,3 +47,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 5213321179286834157, guid: 51212cc8dd1fe614ab7830487fc3fb45, type: 3}
   initialBulletCount: 20
+--- !u!114 &-6820736357205321558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996053561707246241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e8ec7c081beb54b923bfed3b8c4ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
