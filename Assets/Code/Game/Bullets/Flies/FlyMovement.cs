@@ -1,20 +1,17 @@
 using UnityEngine;
 
-public class FlyMovement : MonoBehaviour, IBulletMovement
+public class FlyMovement : ABulletMovement
 {
-    //Implement interface fields
-    public Vector2 direction { get; set; }
-    public float speed { get; set; }
-
-    public void InitBullet(Vector2 direction, float speed)
+    public override void InitBullet(Vector2 position, Vector2 direction, float speed)
     {
+        transform.position = position; 
         this.direction = direction;
         this.speed = speed;
 
         gameObject.SetActive(true);
     }
 
-    public void ClearBullet()
+    public override void ClearBullet()
     {
         gameObject.SetActive(false);
     }
