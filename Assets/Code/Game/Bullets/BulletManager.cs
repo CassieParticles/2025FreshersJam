@@ -27,4 +27,22 @@ public class BulletManager : MonoBehaviour
             bulletPool.Add(AddNewBullet());
         }
     }
+
+    public ABulletMovement GetNewBullet(Vector2 position, Vector2 direction, float speed)
+    {
+        foreach(GameObject bullet in bulletPool)
+        {
+            if(!bullet.activeSelf)
+            {
+                ABulletMovement bulletMovement = bullet.GetComponent<ABulletMovement>();
+                bulletMovement.InitBullet(position, direction, speed);
+                return bulletMovement;
+            }
+        }
+        //Create a new bullet in the pool
+        ABulletMovement newBullet = AddNewBullet().GetComponent<ABulletMovement>();
+        newBullet.InitBullet(position, direction, speed);
+
+        return newBullet;
+    }
 }
