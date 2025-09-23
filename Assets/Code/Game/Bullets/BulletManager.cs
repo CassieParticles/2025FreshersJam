@@ -40,9 +40,11 @@ public class BulletManager : MonoBehaviour
             }
         }
         //Create a new bullet in the pool
-        ABulletMovement newBullet = AddNewBullet().GetComponent<ABulletMovement>();
-        newBullet.InitBullet(position, direction, speed);
+        GameObject newBullet = AddNewBullet();
+        bulletPool.Add(newBullet);
+        ABulletMovement newBulletMovement = newBullet.GetComponent<ABulletMovement>();
+        newBulletMovement.InitBullet(position, direction, speed);
 
-        return newBullet;
+        return newBulletMovement;
     }
 }
