@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class FlyMovement : ABulletMovement
+public class FlyMovement : ABulletMovement, IEdible
 {
     [SerializeField] private float angleRange = 15;
     [SerializeField] private float changeDirectionFreq = 2;
@@ -13,6 +13,12 @@ public class FlyMovement : ABulletMovement
     private float initialAngle;
     private float previousAngle;
     private float nextAngle;
+
+    public void Eaten()
+    {
+        ClearBullet();
+    }
+
     public override void InitBullet(Vector2 position, Vector2 direction, float speed)
     {
         base.InitBullet(position, direction, speed);
@@ -71,5 +77,7 @@ public class FlyMovement : ABulletMovement
             ClearBullet();
         }
     }
+
+
 }
 
