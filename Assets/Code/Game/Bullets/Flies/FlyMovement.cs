@@ -57,7 +57,6 @@ public class FlyMovement : ABulletMovement, IEdible
     {
         base.FixedUpdate();
 
-        Vector2 screenPos = Camera.main.WorldToViewportPoint(transform.position);
 
         time += Time.fixedDeltaTime;
         setInterpAngle(previousAngle, nextAngle, time);
@@ -71,6 +70,7 @@ public class FlyMovement : ABulletMovement, IEdible
         }
         
 
+        Vector2 screenPos = Camera.main.WorldToViewportPoint(transform.position);
         //Bullet is off screen
         if(screenPos.x < 0 || screenPos.x > 1 || screenPos.y < 0 || screenPos.y > 1)
         {
