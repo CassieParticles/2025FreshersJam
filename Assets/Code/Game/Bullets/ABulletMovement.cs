@@ -1,9 +1,10 @@
+using System;
 using UnityEngine;
 
 public abstract class ABulletMovement:MonoBehaviour
 {
-    public Vector2 direction;
-    public float speed;
+    [NonSerialized]public Vector2 direction;
+    [NonSerialized]public float speed;
 
     public virtual void InitBullet(Vector2 position, Vector2 direction, float speed)
     {
