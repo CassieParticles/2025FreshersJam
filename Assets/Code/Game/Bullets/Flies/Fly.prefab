@@ -46,9 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e3b535016ae3c46a2c0a22b6629011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
-  speed: 0
-  angleRange: 30
+  angleRange: 45
   changeDirectionFreq: 1
   curveOrder: 2
 --- !u!212 &5601204266127517557

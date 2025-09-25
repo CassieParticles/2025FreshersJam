@@ -59,3 +59,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e8ec7c081beb54b923bfed3b8c4ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flySpawnFreq: 0.1
+  flySpeed: 3
