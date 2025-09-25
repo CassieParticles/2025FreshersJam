@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,6 +23,10 @@ public class FrogAttack : MonoBehaviour
         private float attackCooldown = 0.3f;
     //
 
+    //State Variables
+        Vector2 attackVectorGizmo;
+    //
+
     //Enable and Disable when necessary
         private void OnEnable() {
             inputActions.FindActionMap("Player").Enable();
@@ -42,8 +47,9 @@ public class FrogAttack : MonoBehaviour
     private void Update() {
         //This is where aiming on controller would go
 
-        if (attackAction.IsPressed()) {
+        if (attackAction.WasPressedThisFrame()) {
             TongueAttack();
+            //Debug.Log("Tongue");
         }
     }
 
@@ -52,13 +58,31 @@ public class FrogAttack : MonoBehaviour
     }
 
     private void TongueAttack() {
-        Vector2 mousePos = Input.mousePosition;
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector2 attackVector = (mousePos - rb.position);
+        attackVectorGizmo = attackVector;
         float rangedDistance = Mathf.Min((attackVector.normalized * tongueRange).magnitude, attackVector.magnitude);
 
-        
-        
-        RaycastHit2D tongueRay = Physics2D.Raycast(rb.position, attackVector, rangedDistance, LayerMask.NameToLayer("2"));
+        List<RaycastHit2D> tongueRay = new List<RaycastHit2D>();
+
+        tongueRay.AddRange(Physics2D.RaycastAll(rb.position, attackVector, rangedDistance, LayerMask.NameToLayer("3")));
+
+        foreach (RaycastHit2D hit in tongueRay) {
+
+            if (hit && hit.transform.GetComponent<ABulletMovement>() != null) {
+                //Debug.Log("Is a bullet");
+                ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>();
+                if (bullet is IEdible) {
+                    ((IEdible)bullet).Eaten();
+                    //Debug.Log("Bullet was eaten");
+                }
+            }
+        }
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.position + (Vector3)attackVectorGizmo);
     }
 }
