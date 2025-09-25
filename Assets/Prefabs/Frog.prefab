@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7955697313200254200}
   - component: {fileID: 8819828469186666284}
   - component: {fileID: 5296056371426134414}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Frog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,6 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5a97faa864cf94abe10cb4251881c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tongueRange: 6
+  attackCooldown: 0.3
 --- !u!50 &1592355172656031158
 Rigidbody2D:
   serializedVersion: 5

@@ -17,9 +17,12 @@ public class FrogMovement : MonoBehaviour {
     //
 
     //Serialized Attributes, this is all the attributes available to change in the Inspector
-        [SerializeField] private float moveSpeed = 2;
         //[SerializeField] private float acceleration = 2;
-        [SerializeField] private float deceleration = 2;
+        [SerializeField][Tooltip ("The speed the frog moves at, also is the max speed")]
+        private float moveSpeed = 6;
+
+        [SerializeField][Tooltip("How quickly the frog slows down when no input is held, keep high as its mostly for game feel")]
+        private float deceleration = 3;
     //
 
 
