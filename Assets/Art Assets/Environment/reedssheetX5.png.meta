@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 5dc5212f396d20943acb0e3cd8b50543
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1817482145235436431
+    second: reedssheetX5_0
+  - first:
+      213: -1714052057424271947
+    second: reedssheetX5_1
+  - first:
+      213: 1441764094235871189
+    second: reedssheetX5_2
+  - first:
+      213: -1547101717449405793
+    second: reedssheetX5_3
+  - first:
+      213: -4899630208322789182
+    second: reedssheetX5_4
+  - first:
+      213: -2348265841296798698
+    second: reedssheetX5_5
+  - first:
+      213: 7935291158497305085
+    second: reedssheetX5_6
+  - first:
+      213: 5684721170667465542
+    second: reedssheetX5_7
+  - first:
+      213: -6149870966447301375
+    second: reedssheetX5_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reedssheetX5_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 465
+        width: 155
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c70ab4e9107c6e0800000000000000
+      internalID: -1817482145235436431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 465
+        width: 225
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5e2b63cb67638e0800000000000000
+      internalID: -1714052057424271947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 540
+        width: 195
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d787de0ecc220410800000000000000
+      internalID: 1441764094235871189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 470
+        width: 245
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a08045f27978ae0800000000000000
+      internalID: -1547101717449405793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_4
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 540
+        width: 240
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0a52ee844010cb0800000000000000
+      internalID: -4899630208322789182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 140
+        width: 75
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c0253b8a8496fd0800000000000000
+      internalID: -2348265841296798698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 115
+        width: 50
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1a7830441df1e60800000000000000
+      internalID: 7935291158497305085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 110
+        width: 280
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64be6c829cf24ee40800000000000000
+      internalID: 5684721170667465542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reedssheetX5_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 65
+        width: 40
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d9b6e70f447aaa0800000000000000
+      internalID: -6149870966447301375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5304f08674c33cf49b8d2af5571a314c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reedssheetX5_0: -1817482145235436431
+      reedssheetX5_1: -1714052057424271947
+      reedssheetX5_2: 1441764094235871189
+      reedssheetX5_3: -1547101717449405793
+      reedssheetX5_4: -4899630208322789182
+      reedssheetX5_5: -2348265841296798698
+      reedssheetX5_6: 7935291158497305085
+      reedssheetX5_7: 5684721170667465542
+      reedssheetX5_8: -6149870966447301375
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
