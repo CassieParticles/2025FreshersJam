@@ -21,9 +21,18 @@ public class FrogAttack : MonoBehaviour
 
         [SerializeField][Tooltip("How long you need to wait before you can tongue again after the tongue is back")] 
         private float attackCooldown = 0.3f;
+
+        [SerializeField]
+        private GameObject flyProjectilePrefab;
+
+        [SerializeField][Tooltip("The speed of the fly when being spat out")]
+        private float flyProjectileSpeed = 8;
     //
 
     //State Variables
+    private int heldFlies;
+        private float currentCooldown;
+
         Vector2 attackVectorGizmo;
     //
 
@@ -46,10 +55,17 @@ public class FrogAttack : MonoBehaviour
     //HandleInputs
     private void Update() {
         //This is where aiming on controller would go
+        currentCooldown -= Time.deltaTime;
 
-        if (attackAction.WasPressedThisFrame()) {
-            TongueAttack();
-            //Debug.Log("Tongue");
+        if (attackAction.WasPressedThisFrame() && currentCooldown <= 0) {
+
+            if (heldFlies <= 0) {
+                TongueAttack();
+            
+            } else {
+                SpitAttack();
+            }
+            currentCooldown = attackCooldown;
         }
     }
 
@@ -61,8 +77,8 @@ public class FrogAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         Vector2 attackVector = (mousePos - rb.position);
-        attackVectorGizmo = attackVector;
         float rangedDistance = Mathf.Min((attackVector.normalized * tongueRange).magnitude, attackVector.magnitude);
+        attackVectorGizmo = attackVector.normalized * rangedDistance;
 
         List<RaycastHit2D> tongueRay = new List<RaycastHit2D>();
 
@@ -75,10 +91,24 @@ public class FrogAttack : MonoBehaviour
                 ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>();
                 if (bullet is IEdible) {
                     ((IEdible)bullet).Eaten();
+                    heldFlies++;
                     //Debug.Log("Bullet was eaten");
                 }
             }
         }
+    }
+
+    private void SpitAttack() {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 attackVector = (mousePos - rb.position).normalized;
+
+        for (int i = 0; i < heldFlies; i++) {
+            GameObject fly = Instantiate(flyProjectilePrefab);
+            Rigidbody2D flyrb = fly.GetComponent<Rigidbody2D>();
+            flyrb.position = rb.position;
+            flyrb.linearVelocity = attackVector * flyProjectileSpeed;
+        }
+        heldFlies = 0;
     }
 
     private void OnDrawGizmos() {
