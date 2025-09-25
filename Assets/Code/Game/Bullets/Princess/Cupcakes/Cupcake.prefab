@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7447434917420317419
+--- !u!1 &7158451523157948582
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5975320489883945714}
-  - component: {fileID: -5110551418987139897}
-  - component: {fileID: 676894808121454520}
+  - component: {fileID: 1459826215940679328}
+  - component: {fileID: -4632894099858120206}
+  - component: {fileID: 1776566201599624597}
   m_Layer: 0
-  m_Name: Kiss
+  m_Name: Cupcake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5975320489883945714
+--- !u!4 &1459826215940679328
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447434917420317419}
+  m_GameObject: {fileID: 7158451523157948582}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -33,26 +33,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5110551418987139897
+--- !u!114 &-4632894099858120206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447434917420317419}
+  m_GameObject: {fileID: 7158451523157948582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b32ceb0c5c30484c8f60dec37bb4e4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 473c3b9b5d7526a4b8c183b3de266a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kissDamage: 20
---- !u!212 &676894808121454520
+  damage: 10
+--- !u!212 &1776566201599624597
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7447434917420317419}
+  m_GameObject: {fileID: 7158451523157948582}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -90,12 +90,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3344306579357798092, guid: 484accd32d7d69e4e9002a8c0a0a667c, type: 3}
+  m_Sprite: {fileID: 3388748113662439576, guid: 2714e1a8f33e7fd499fc84bf41d10e17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.52, y: 4.31}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
