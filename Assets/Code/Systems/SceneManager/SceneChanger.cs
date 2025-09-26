@@ -8,4 +8,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Win");
     }
 
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
