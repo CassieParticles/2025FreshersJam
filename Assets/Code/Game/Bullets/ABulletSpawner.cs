@@ -13,7 +13,7 @@ public abstract class ABulletSpawner : MonoBehaviour
 
     protected void SpawnAttack(AttackObject attackObject, PrincessMovement.Side side)
     {
-        List<AttackObject.AttackData> attacks = attackObject.attacks[this];
+        AttackData[] attacks = attackObject.attacks[this];
 
         foreach (AttackData attackData in attacks)
         {

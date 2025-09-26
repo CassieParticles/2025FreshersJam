@@ -10,9 +10,9 @@ public class AttackObject
         public float speed;
     }
 
-    public Dictionary<ABulletSpawner, List<AttackData>> attacks { get; private set; }
+    public Dictionary<ABulletSpawner, AttackData[]> attacks { get; private set; }
 
-    public void AddAttacks(ABulletSpawner spawner, List<AttackData> attacksList)
+    public void AddAttacks(ABulletSpawner spawner, AttackData[] attacksList)
     {
         if(attacks.ContainsKey(spawner))
         {
