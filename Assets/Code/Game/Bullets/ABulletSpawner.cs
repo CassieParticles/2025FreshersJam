@@ -4,11 +4,14 @@ using static AttackObject;
 
 public abstract class ABulletSpawner : MonoBehaviour
 {
+
     protected BulletManager bulletManager;
 
     private void Awake()
     {
         bulletManager = GetComponent<BulletManager>();
+
+
     }
 
     public void SpawnAttack(AttackObject attackObject, PrincessMovement.Side side)
