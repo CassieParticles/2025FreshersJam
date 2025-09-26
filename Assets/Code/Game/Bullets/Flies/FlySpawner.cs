@@ -3,18 +3,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(BulletManager))]
-public class FlySpawner : MonoBehaviour
+public class FlySpawner : ABulletSpawner
 {
     [SerializeField] private float flySpawnFreq = 2;
     [SerializeField] private float flySpeed = 3;
-    BulletManager bulletManager;
 
     Coroutine flySpawnCoroutine;
 
-    private void Awake()
-    {
-        bulletManager = GetComponent<BulletManager>();
-    }
 
     private Vector2 CalculateSpawningLocation(Vector2 direction)
     {

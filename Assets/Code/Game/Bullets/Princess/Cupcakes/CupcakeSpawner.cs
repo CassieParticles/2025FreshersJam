@@ -1,12 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CupcakeSpawner : MonoBehaviour
+public class CupcakeSpawner : ABulletSpawner
 {
-    private BulletManager bulletManager;
 
-    private void Awake()
-    {
-        bulletManager = GetComponent<BulletManager>();
-    }
 }
