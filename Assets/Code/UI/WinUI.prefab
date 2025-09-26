@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827676039781168032, guid: cbd3d66bc9f575646b9d003a7fc67fed, type: 3}
       propertyPath: m_Name
-      value: WinUI 1
+      value: WinUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

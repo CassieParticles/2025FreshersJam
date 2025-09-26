@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1990126700332085503}
   - component: {fileID: -6035975346547286861}
   - component: {fileID: 1863214978379124648}
+  - component: {fileID: -221890660006787111}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -93,6 +94,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1990126700332085503}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ReturnToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-221890660006787111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697930996405739766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79eb5b2a0f707c24f93a98c45254a53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 4c12fcc0831ad0a458a77722907ce646, type: 2}
+  localEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1990126700332085503}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

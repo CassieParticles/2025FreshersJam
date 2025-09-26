@@ -227,3 +227,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toMenu: {fileID: 11400000, guid: 1f33ac8f42632cd4f8839ea7a4c429b0, type: 2}
+  toGame: {fileID: 11400000, guid: 4c12fcc0831ad0a458a77722907ce646, type: 2}
