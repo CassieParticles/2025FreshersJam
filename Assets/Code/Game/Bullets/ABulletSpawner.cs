@@ -26,7 +26,7 @@ public abstract class ABulletSpawner : MonoBehaviour
             {
                 direction.x *= -1;
             }
-            bulletManager.GetNewBullet((Vector2)transform.position + attackData.position, direction, attackData.speed);
+            bulletManager.GetNewBulletDelay((Vector2)transform.position + attackData.position, direction, attackData.speed,attackData.delay);
         }
     }
 }
