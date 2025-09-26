@@ -1,3 +1,6 @@
+using NUnit.Framework.Constraints;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,6 +39,17 @@ public class BulletManager : MonoBehaviour
         {
             bulletPool.Add(AddNewBullet());
         }
+    }
+
+    private IEnumerator DelaySpawning(Vector2 position, Vector2 direction, float speed, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        GetNewBullet(position, direction, speed);
+    }
+
+    public void GetNewBulletDelay(Vector2 position, Vector2 direction, float speed, float delay)
+    {
+        StartCoroutine(DelaySpawning(position,direction,speed, delay));
     }
 
     public ABulletMovement GetNewBullet(Vector2 position, Vector2 direction, float speed)
