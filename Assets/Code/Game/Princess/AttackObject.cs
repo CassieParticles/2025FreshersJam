@@ -3,9 +3,16 @@ using UnityEngine;
 
 public class AttackObject
 {
-    public Dictionary<ABulletSpawner, List<Vector2>> attacks { get; private set; }
+    public struct AttackData
+    {
+        public Vector2 position;
+        public Vector2 direction;
+        public float speed;
+    }
 
-    public void AddAttacks(ABulletSpawner spawner, List<Vector2> attacksList)
+    public Dictionary<ABulletSpawner, List<AttackData>> attacks { get; private set; }
+
+    public void AddAttacks(ABulletSpawner spawner, List<AttackData> attacksList)
     {
         if(attacks.ContainsKey(spawner))
         {
