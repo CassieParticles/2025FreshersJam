@@ -1,7 +1,11 @@
+using System;
 using UnityEngine;
 
 public class SpitFlyProjectile : MonoBehaviour
 {
+    //This gets set in the FrogAttack Script
+    [NonSerialized] public int projectileDamage = 2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         
