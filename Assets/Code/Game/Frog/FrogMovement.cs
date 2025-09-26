@@ -4,35 +4,35 @@ using UnityEngine.InputSystem;
 public class FrogMovement : MonoBehaviour {
     
     //Input System Files
-        InputActionAsset inputActions;
+    InputActionAsset inputActions;
 
-        private InputAction moveAction;
+    private InputAction moveAction;
 
-        private Vector2 moveActionValue;
+    private Vector2 moveActionValue;
     //
 
     //Shorthands for used components
-        private Rigidbody2D rb;
-        private BoxCollider2D bc;
+    private Rigidbody2D rb;
+    private BoxCollider2D bc;
     //
 
     //Serialized Attributes, this is all the attributes available to change in the Inspector
-        //[SerializeField] private float acceleration = 2;
-        [SerializeField][Tooltip ("The speed the frog moves at, also is the max speed")]
-        private float moveSpeed = 6;
+    //[SerializeField] private float acceleration = 2;
+    [SerializeField][Tooltip ("The speed the frog moves at, also is the max speed")]
+    private float moveSpeed = 6;
 
-        [SerializeField][Tooltip("How quickly the frog slows down when no input is held, keep high as its mostly for game feel")]
-        private float deceleration = 3;
+    [SerializeField][Tooltip("How quickly the frog slows down when no input is held, keep high as its mostly for game feel")]
+    private float deceleration = 3;
     //
 
 
     //Enable and Disable when necessary
-        private void OnEnable() {
-            inputActions.FindActionMap("Player").Enable();
-        }
-        private void OnDisable() {
-            inputActions.FindActionMap("Player").Disable();
-        }
+    //private void OnEnable() {
+    //    inputActions.FindActionMap("Player").Enable();
+    //}
+    //private void OnDisable() {
+    //    inputActions.FindActionMap("Player").Disable();
+    //}
     //
 
     //Set up variables and pointers

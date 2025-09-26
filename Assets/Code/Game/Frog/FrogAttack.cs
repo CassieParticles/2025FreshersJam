@@ -5,44 +5,47 @@ using UnityEngine.InputSystem;
 public class FrogAttack : MonoBehaviour
 {
     //Input System Files
-        InputActionAsset inputActions;
+    InputActionAsset inputActions;
 
-        private InputAction attackAction;
-        private InputAction aimAction; //For controller support if we need it down the line
+    private InputAction attackAction;
+    private InputAction aimAction; //For controller support if we need it down the line
     //
 
     //Shorthands for used components
-        private Rigidbody2D rb;
+     private Rigidbody2D rb;
     //
 
     //Serialized Attributes, this is all the attributes available to change in the Inspector
-        [SerializeField][Tooltip("The max range of the tongue in world units, you can imagine it as how far the frog can move in 1 second with a speed of the same value")] 
-        private float tongueRange = 6;
+    [SerializeField][Tooltip("The max range of the tongue in world units, you can imagine it as how far the frog can move in 1 second with a speed of the same value")] 
+    private float tongueRange = 6;
 
-        [SerializeField][Tooltip("How long you need to wait before you can tongue again after the tongue is back")] 
-        private float attackCooldown = 0.3f;
+    [SerializeField][Tooltip("How long you need to wait before you can tongue again after the tongue is back")] 
+    private float attackCooldown = 0.3f;
 
-        [SerializeField]
-        private GameObject flyProjectilePrefab;
+    [SerializeField][Tooltip("The speed of the fly when being spat out")]
+    private float flyProjectileSpeed = 8;
 
-        [SerializeField][Tooltip("The speed of the fly when being spat out")]
-        private float flyProjectileSpeed = 8;
+    [SerializeField][Tooltip("The damage the fly deals to enemies when being spat out")]
+    private int flyProjectileDamage = 2;
+
+    [SerializeField]
+    private GameObject flyProjectilePrefab;
     //
 
     //State Variables
     private int heldFlies;
-        private float currentCooldown;
+    private float currentCooldown;
 
-        Vector2 attackVectorGizmo;
+    Vector2 attackVectorGizmo;
     //
 
     //Enable and Disable when necessary
-        private void OnEnable() {
-            inputActions.FindActionMap("Player").Enable();
-        }
-        private void OnDisable() {
-            inputActions.FindActionMap("Player").Disable();
-        }
+    //private void OnEnable() {
+    //    inputActions.FindActionMap("Player").Enable();
+    //}
+    //private void OnDisable() {
+    //    inputActions.FindActionMap("Player").Disable();
+    //}
     //
 
     //Set up variables and pointers
@@ -107,6 +110,7 @@ public class FrogAttack : MonoBehaviour
             Rigidbody2D flyrb = fly.GetComponent<Rigidbody2D>();
             flyrb.position = rb.position;
             flyrb.linearVelocity = attackVector * flyProjectileSpeed;
+            fly.GetComponent<SpitFlyProjectile>().projectileDamage = flyProjectileDamage;
         }
         heldFlies = 0;
     }
