@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4272465505827316100}
   - component: {fileID: 7639260142822286153}
   - component: {fileID: 8816462795219594941}
+  - component: {fileID: 6418553882121270065}
   - component: {fileID: 1592355172656031158}
   - component: {fileID: 7955697313200254200}
   - component: {fileID: 8819828469186666284}
@@ -65,8 +66,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tongueRange: 6
   attackCooldown: 0.3
-  flyProjectilePrefab: {fileID: 2758161572483053936, guid: 679d43ee6d8dfba4ba5d7670ba8ba853, type: 3}
   flyProjectileSpeed: 8
+  flyProjectileDamage: 2
+  flyProjectilePrefab: {fileID: 2758161572483053936, guid: 679d43ee6d8dfba4ba5d7670ba8ba853, type: 3}
+--- !u!114 &6418553882121270065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490407984860878236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af19494a57af3ca4bb0632ea5c405a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  DeathEvent: {fileID: 11400000, guid: 28ed0648c39f422439479eb44a28206c, type: 2}
 --- !u!50 &1592355172656031158
 Rigidbody2D:
   serializedVersion: 5
