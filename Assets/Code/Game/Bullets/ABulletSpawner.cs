@@ -11,7 +11,7 @@ public abstract class ABulletSpawner : MonoBehaviour
         bulletManager = GetComponent<BulletManager>();
     }
 
-    protected void SpawnAttack(AttackObject attackObject, PrincessMovement.Side side)
+    public void SpawnAttack(AttackObject attackObject, PrincessMovement.Side side)
     {
         AttackData[] attacks = attackObject.attacks[this];
 
