@@ -4,14 +4,17 @@ using UnityEngine;
 public class BulletManager : MonoBehaviour
 {
     [SerializeField] public GameObject Bullet;
+    [SerializeField] private GameObject bulletPoolPrefab;
+
     [SerializeField] private int initialBulletCount = 20;
 
+    protected BulletPool bulletPoolObj;
     private List<GameObject> bulletPool;
 
     private GameObject AddNewBullet()
     {
         GameObject bullet = Instantiate(Bullet);
-        bullet.transform.parent = transform;
+        bullet.transform.parent = bulletPoolObj.transform;
         bullet.SetActive(false);
 
         return bullet;
@@ -21,8 +24,15 @@ public class BulletManager : MonoBehaviour
     {
         bulletPool = new List<GameObject>();
 
+        //Set up bullet pool
+        bulletPoolObj = FindAnyObjectByType<BulletPool>();
+        if (!bulletPoolObj)
+        {
+            bulletPoolObj = Instantiate(bulletPoolPrefab).GetComponent<BulletPool>();
+        }
+
         //Instantiate bullets
-        for(int i=0;i<initialBulletCount;++i)
+        for (int i=0;i<initialBulletCount;++i)
         {
             bulletPool.Add(AddNewBullet());
         }

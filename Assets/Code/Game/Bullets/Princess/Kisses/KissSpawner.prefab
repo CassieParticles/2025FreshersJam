@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 7447434917420317419, guid: 03957f178b123db48b5efb4bc5e280bd, type: 3}
+  bulletPoolPrefab: {fileID: 2939477087699764926, guid: 0aca5d49a88f57943b316b132ab4c15e, type: 3}
   initialBulletCount: 20
 --- !u!114 &-628342822365939008
 MonoBehaviour:
