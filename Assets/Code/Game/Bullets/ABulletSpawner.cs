@@ -17,7 +17,13 @@ public abstract class ABulletSpawner : MonoBehaviour
 
         foreach (AttackData attackData in attacks)
         {
-            bulletManager.GetNewBullet((Vector2)transform.position + attackData.position, attackData.direction, attackData.speed);
+            //Flip attacks coming from right side
+            Vector2 direction = attackData.direction;
+            if (side == PrincessMovement.Side.Right)
+            {
+                direction.x *= -1;
+            }
+            bulletManager.GetNewBullet((Vector2)transform.position + attackData.position, direction, attackData.speed);
         }
     }
 }

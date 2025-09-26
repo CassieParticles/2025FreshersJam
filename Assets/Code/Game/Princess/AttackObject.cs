@@ -33,11 +33,11 @@ public class AttackObject
         attacks.Add(spawner, attacksList);
     }
 
-    public void Attack()
+    public void Attack(PrincessMovement.Side side)
     {
         foreach (ABulletSpawner spawner in attacks.Keys)
         {
-            spawner.SpawnAttack(this, PrincessMovement.Side.Left);
+            spawner.SpawnAttack(this, side);
         }
     }
 }
