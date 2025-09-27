@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: cf6901b9301d6864680afb19cc5dc60c
+guid: c7c0aa369b7f0f34a8d28f064fc5e42c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1987229499935730605
-    second: FroggoSideNormal_0
+      213: -979294093391672312
+    second: FroggoSideOpen_0
+  - first:
+      213: 3969376236860682987
+    second: FroggoSideOpen_1
+  - first:
+      213: 2055774945608409743
+    second: FroggoSideOpen_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FroggoSideNormal_0
+      name: FroggoSideOpen_0
       rect:
         serializedVersion: 2
         x: 7
-        y: 15
-        width: 54
-        height: 41
+        y: 16
+        width: 56
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: daba8de83be049b10800000000000000
-      internalID: 1987229499935730605
+      spriteID: 80c40c8e539d862f0800000000000000
+      internalID: -979294093391672312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroggoSideOpen_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 8
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be235f128ae061730800000000000000
+      internalID: 3969376236860682987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FroggoSideOpen_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 13
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82232bcb64978c10800000000000000
+      internalID: 2055774945608409743
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FroggoSideNormal_0: 1987229499935730605
+      FroggoSideOpen_0: -979294093391672312
+      FroggoSideOpen_1: 3969376236860682987
+      FroggoSideOpen_2: 2055774945608409743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
