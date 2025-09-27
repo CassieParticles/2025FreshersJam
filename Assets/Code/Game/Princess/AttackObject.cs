@@ -5,15 +5,17 @@ public class AttackObject
 {
     public struct AttackData
     {
-        public AttackData(Vector2 position, Vector2 direction, float speed)
+        public AttackData(Vector2 position, Vector2 direction, float speed, float delay)
         {
             this.position = position;
             this.direction = direction; 
-            this.speed = speed; 
+            this.speed = speed;
+            this.delay = delay;
         }
         public Vector2 position;
         public Vector2 direction;
         public float speed;
+        public float delay;
     }
 
     public Dictionary<ABulletSpawner, AttackData[]> attacks { get; private set; }
