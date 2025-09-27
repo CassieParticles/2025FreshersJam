@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.Mathematics;
 
 public class FrogAttack : MonoBehaviour
 {
@@ -12,12 +14,18 @@ public class FrogAttack : MonoBehaviour
     //
 
     //Shorthands for used components
-     private Rigidbody2D rb;
+    private Rigidbody2D rb;
+    private GameObject tongueBase;
+    private GameObject tongueTip;
+    private GameObject tongueWhole;
     //
 
     //Serialized Attributes, this is all the attributes available to change in the Inspector
     [SerializeField][Tooltip("The max range of the tongue in world units, you can imagine it as how far the frog can move in 1 second with a speed of the same value")] 
     private float tongueRange = 6;
+
+    [SerializeField][Tooltip("How long the tongue is out for when using the tongue attack")]
+    private float tongueDuration = 0.2f;
 
     [SerializeField][Tooltip("How long you need to wait before you can tongue again after the tongue is back")] 
     private float attackCooldown = 0.3f;
@@ -37,6 +45,8 @@ public class FrogAttack : MonoBehaviour
     private float currentCooldown;
 
     Vector2 attackVectorGizmo;
+
+    List<RaycastHit2D> tongueRay;
     //
 
     //Enable and Disable when necessary
@@ -53,6 +63,12 @@ public class FrogAttack : MonoBehaviour
         attackAction = InputSystem.actions.FindAction("Attack");
 
         rb = GetComponent<Rigidbody2D>();
+
+        tongueWhole = transform.GetChild(0).gameObject;
+        tongueBase = tongueWhole.transform.GetChild(0).gameObject;
+        tongueTip = tongueWhole.transform.GetChild(1).gameObject;
+
+        tongueRay = new List<RaycastHit2D>();
     }
 
     //HandleInputs
@@ -83,22 +99,57 @@ public class FrogAttack : MonoBehaviour
         float rangedDistance = Mathf.Min((attackVector.normalized * tongueRange).magnitude, attackVector.magnitude);
         attackVectorGizmo = attackVector.normalized * rangedDistance;
 
-        List<RaycastHit2D> tongueRay = new List<RaycastHit2D>();
 
+
+        tongueWhole.transform.up = attackVector;
+        //tongueTip.transform.up = attackVector;
+
+        StartCoroutine(TongueAnimation(rangedDistance));
+
+
+        tongueRay = new List<RaycastHit2D>();
         tongueRay.AddRange(Physics2D.RaycastAll(rb.position, attackVector, rangedDistance, LayerMask.NameToLayer("3")));
 
-        foreach (RaycastHit2D hit in tongueRay) {
 
-            if (hit && hit.transform.GetComponent<ABulletMovement>() != null) {
-                //Debug.Log("Is a bullet");
-                ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>();
-                if (bullet is IEdible) {
-                    ((IEdible)bullet).Eaten();
-                    heldFlies++;
-                    //Debug.Log("Bullet was eaten");
+    }
+
+    public IEnumerator TongueAnimation(float dist) {
+
+        float timer = 0;
+
+        tongueWhole.SetActive(true); //Reveal the tongue and prepare for tongue action
+
+        //What Im doing here is taking a sine function (since they tend to stay for a moment at the height, which is what we want for a tongue)
+        //And then cut off the lower half of it, and offsetting it, so that it starts in the middle of going up, and ends in the middle of going down
+
+        float timeUnit = Mathf.PI / 6; //Units of time the function uses
+
+        while (timer < tongueDuration) {
+            float percentage = timer / tongueDuration; //Determine how far into the animation we are
+            float sinePos = (percentage * 4 * timeUnit) + timeUnit; //Use 16% to 83% of a full sine wave
+            float finalCurve = (Mathf.Sin(sinePos) * 2) - 1; //Make it so the curve starts and ends at 0 and peaks at 1, despite not using the full sine wave
+
+            float tongueStretch = Mathf.Lerp(0, dist, finalCurve) * 2f; //Lerp using the sine function
+            tongueBase.transform.localScale = new Vector3(0.5f, tongueStretch, 0.5f); //Set the size of the tongue
+            tongueTip.transform.localPosition = new Vector3(0, tongueStretch * 0.5f, 0); //And the position of the tip
+            yield return new WaitForFixedUpdate();
+            timer += Time.deltaTime; //Add time to the timer
+
+            if (timer > tongueDuration / 2) {
+                foreach (RaycastHit2D hit in tongueRay) { //Finds everything that hit the tongue
+                    if (hit && hit.transform.GetComponent<ABulletMovement>() != null) {
+                        ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>(); //See if the hit is a bullet
+                        if (bullet is IEdible) {
+                            ((IEdible)bullet).Eaten(); //Eat it if it is edible
+                            heldFlies = 1;
+                        }
+                    }
                 }
             }
         }
+        
+
+        tongueWhole.SetActive(false); //Hide the tongue again
     }
 
     private void SpitAttack() {
