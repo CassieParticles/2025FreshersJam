@@ -2035,6 +2035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9025081788954906703, guid: 14e795a25e946f1459a0d4b32c3028e2, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 183137912405900407, guid: 14e795a25e946f1459a0d4b32c3028e2, type: 3}
       propertyPath: m_Name
       value: Princess
