@@ -188,7 +188,7 @@ public class FrogAttack : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 attackVector = (mousePos - rb.position).normalized;
 
-        if (attackVector.y > attackVector.x) {
+        if (Mathf.Abs(attackVector.y) > Mathf.Abs(attackVector.x)) {
             int animDirection = (int)(-Mathf.Sign(attackVector.y) + 1);
             anim.SetInteger("Direction", animDirection);
         } else {
