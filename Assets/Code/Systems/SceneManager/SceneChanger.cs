@@ -17,4 +17,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Gameplay");
     }
+
+    public void Lose() 
+    {
+        SceneManager.LoadScene("LoseScene");
+    }
 }
