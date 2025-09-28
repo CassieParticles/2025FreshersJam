@@ -15,9 +15,12 @@ public class FrogAttack : MonoBehaviour
 
     //Shorthands for used components
     private Rigidbody2D rb;
+    private Animator anim;
+
     private GameObject tongueBase;
     private GameObject tongueTip;
     private GameObject tongueWhole;
+    private SpriteRenderer tongueSprite;
     //
 
     //Serialized Attributes, this is all the attributes available to change in the Inspector
@@ -63,12 +66,16 @@ public class FrogAttack : MonoBehaviour
         attackAction = InputSystem.actions.FindAction("Attack");
 
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         tongueWhole = transform.GetChild(0).gameObject;
         tongueBase = tongueWhole.transform.GetChild(0).gameObject;
         tongueTip = tongueWhole.transform.GetChild(1).gameObject;
+        tongueSprite = tongueBase.GetComponent<SpriteRenderer>();
 
         tongueRay = new List<RaycastHit2D>();
+
+        tongueWhole.SetActive(false);
     }
 
     //HandleInputs
@@ -80,6 +87,7 @@ public class FrogAttack : MonoBehaviour
 
             if (heldFlies <= 0) {
                 TongueAttack();
+                
             
             } else {
                 SpitAttack();
@@ -99,9 +107,21 @@ public class FrogAttack : MonoBehaviour
         float rangedDistance = Mathf.Min((attackVector.normalized * tongueRange).magnitude, attackVector.magnitude);
         attackVectorGizmo = attackVector.normalized * rangedDistance;
 
+        anim.SetBool("Tongueing", true);
+
+        if (Mathf.Abs(attackVector.y) > Mathf.Abs(attackVector.x)) {
+            int animDirection = (int)(-Mathf.Sign(attackVector.y) + 1);
+            anim.SetInteger("Direction", animDirection);
+            if (animDirection == 2) {
+                tongueSprite.sortingOrder = 13;
+            }
+        } else {
+            int animDirection = (int)(-Mathf.Sign(attackVector.x) + 2);
+            anim.SetInteger("Direction", animDirection);
+        }
 
 
-        tongueWhole.transform.up = attackVector;
+            tongueWhole.transform.up = attackVector;
         //tongueTip.transform.up = attackVector;
 
 
@@ -116,7 +136,7 @@ public class FrogAttack : MonoBehaviour
     public IEnumerator TongueAnimation(float dist) {
 
         float timer = 0;
-
+        
         tongueWhole.SetActive(true); //Reveal the tongue and prepare for tongue action
 
         //What Im doing here is taking a sine function (since they tend to stay for a moment at the height, which is what we want for a tongue)
@@ -146,6 +166,7 @@ public class FrogAttack : MonoBehaviour
                                 //Debug.Log("Eating");
                                 edible.Eaten(); //Eat it if it is edible
                                 heldFlies = 1;
+                                anim.SetBool("HasFly", true);
                             }
                         } 
                     }
@@ -155,11 +176,26 @@ public class FrogAttack : MonoBehaviour
         
 
         tongueWhole.SetActive(false); //Hide the tongue again
+        anim.SetBool("Tongueing", false);
+        tongueSprite.sortingOrder = 10;
     }
 
     private void SpitAttack() {
+
+        anim.SetBool("HasFly", false);
+        anim.SetTrigger("Spitting");
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 attackVector = (mousePos - rb.position).normalized;
+
+        if (attackVector.y > attackVector.x) {
+            int animDirection = (int)(-Mathf.Sign(attackVector.y) + 1);
+            anim.SetInteger("Direction", animDirection);
+        } else {
+            int animDirection = (int)(-Mathf.Sign(attackVector.x) + 2);
+            anim.SetInteger("Direction", animDirection);
+        }
+
 
         for (int i = 0; i < heldFlies; i++) {
             GameObject fly = Instantiate(flyProjectilePrefab);
