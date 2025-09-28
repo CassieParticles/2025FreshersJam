@@ -66,6 +66,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   DeathEvent: {fileID: 11400000, guid: 432758e60f916714985b07dc3a8bd58e, type: 2}
+  health: 0
 --- !u!114 &-995900182210216350
 MonoBehaviour:
   m_ObjectHideFlags: 0
