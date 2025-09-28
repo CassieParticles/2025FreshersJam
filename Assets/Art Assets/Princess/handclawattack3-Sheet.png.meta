@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 66ccf7e1af879aa4d9bbf007edc2e656
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3019931287439005082
+    second: handclawattack3-Sheet_0
+  - first:
+      213: 3168133532769085399
+    second: handclawattack3-Sheet_1
+  - first:
+      213: 4486559131540500491
+    second: handclawattack3-Sheet_2
+  - first:
+      213: -3473240639972300015
+    second: handclawattack3-Sheet_3
+  - first:
+      213: 6190863429252749051
+    second: handclawattack3-Sheet_4
+  - first:
+      213: -7409284364075925203
+    second: handclawattack3-Sheet_5
+  - first:
+      213: -6666886863716643026
+    second: handclawattack3-Sheet_6
+  - first:
+      213: 661829438957911762
+    second: handclawattack3-Sheet_7
+  - first:
+      213: -6213833725915902035
+    second: handclawattack3-Sheet_8
+  - first:
+      213: 4703543158945423294
+    second: handclawattack3-Sheet_9
+  - first:
+      213: -6837087575317166516
+    second: handclawattack3-Sheet_10
+  - first:
+      213: -2928992011658786428
+    second: handclawattack3-Sheet_11
+  - first:
+      213: 4615332836100294201
+    second: handclawattack3-Sheet_12
+  - first:
+      213: 5926130437359198682
+    second: handclawattack3-Sheet_13
+  - first:
+      213: 7720789369389552614
+    second: handclawattack3-Sheet_14
+  - first:
+      213: -9177414488132347825
+    second: handclawattack3-Sheet_15
+  - first:
+      213: 922475823769537133
+    second: handclawattack3-Sheet_16
+  - first:
+      213: -3090608554001506140
+    second: handclawattack3-Sheet_17
+  - first:
+      213: -13330825298008369
+    second: handclawattack3-Sheet_18
+  - first:
+      213: -785453463439702677
+    second: handclawattack3-Sheet_19
+  - first:
+      213: 8472693329408227250
+    second: handclawattack3-Sheet_20
+  - first:
+      213: 2621460555010324122
+    second: handclawattack3-Sheet_21
+  - first:
+      213: 201082326880778129
+    second: handclawattack3-Sheet_22
+  - first:
+      213: -1104790655923480568
+    second: handclawattack3-Sheet_23
+  - first:
+      213: 272329444508771350
+    second: handclawattack3-Sheet_24
+  - first:
+      213: 7698741951567800053
+    second: handclawattack3-Sheet_25
+  - first:
+      213: 1824549722752114023
+    second: handclawattack3-Sheet_26
+  - first:
+      213: 8967413169768498303
+    second: handclawattack3-Sheet_27
+  - first:
+      213: 2166197941415731840
+    second: handclawattack3-Sheet_28
+  - first:
+      213: 5840577247994442539
+    second: handclawattack3-Sheet_29
+  - first:
+      213: 8122832225888433435
+    second: handclawattack3-Sheet_30
+  - first:
+      213: 667060675252728657
+    second: handclawattack3-Sheet_31
+  - first:
+      213: -4309903146921172446
+    second: handclawattack3-Sheet_32
+  - first:
+      213: 6780414782065494007
+    second: handclawattack3-Sheet_33
+  - first:
+      213: 4495834265497448791
+    second: handclawattack3-Sheet_34
+  - first:
+      213: 1409931870366898041
+    second: handclawattack3-Sheet_35
+  - first:
+      213: -3722280201347693593
+    second: handclawattack3-Sheet_36
+  - first:
+      213: 1884219050203444623
+    second: handclawattack3-Sheet_37
+  - first:
+      213: -2680724524051450438
+    second: handclawattack3-Sheet_38
+  - first:
+      213: -1181872336789919068
+    second: handclawattack3-Sheet_39
+  - first:
+      213: -7703812872066865685
+    second: handclawattack3-Sheet_40
+  - first:
+      213: -5965968266199372139
+    second: handclawattack3-Sheet_41
+  - first:
+      213: 1177023051656930789
+    second: handclawattack3-Sheet_42
+  - first:
+      213: -2697383729749219234
+    second: handclawattack3-Sheet_43
+  - first:
+      213: -6974703805748496320
+    second: handclawattack3-Sheet_44
+  - first:
+      213: 306122187209434546
+    second: handclawattack3-Sheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 38
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95d3e17183f8e920800000000000000
+      internalID: 3019931287439005082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 45
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d764bd99a877fb20800000000000000
+      internalID: 3168133532769085399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 38
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00b14362c5734e30800000000000000
+      internalID: 4486559131540500491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 45
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b200b3a029ccfc0800000000000000
+      internalID: -3473240639972300015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 15
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf611910d7d5ae550800000000000000
+      internalID: 6190863429252749051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 15
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21066f702fec2990800000000000000
+      internalID: -7409284364075925203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 14
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f837a58b57a73a0800000000000000
+      internalID: -6666886863716643026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 14
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de7bf24e5a4f2900800000000000000
+      internalID: 661829438957911762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 14
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafc079062704c9a0800000000000000
+      internalID: -6213833725915902035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 14
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf19a62597564140800000000000000
+      internalID: 4703543158945423294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 12
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46cbfe1319cd11a0800000000000000
+      internalID: -6837087575317166516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 12
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4890f1ba8412a57d0800000000000000
+      internalID: -2928992011658786428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 42
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93644f7e2c4fc0040800000000000000
+      internalID: 4615332836100294201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 10
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1ec6b1c38dd3250800000000000000
+      internalID: 5926130437359198682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 42
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e393146601c52b60800000000000000
+      internalID: 7720789369389552614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 10
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f481956a52643a080800000000000000
+      internalID: -9177414488132347825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 9
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a4badcfda4dcc00800000000000000
+      internalID: 922475823769537133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 9
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0e4f615e3fb15d0800000000000000
+      internalID: -3090608554001506140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 9
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6ac8d5fa3a0dff0800000000000000
+      internalID: -13330825298008369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 9
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65831c8c328915f0800000000000000
+      internalID: -785453463439702677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 9
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7f23e51bd059570800000000000000
+      internalID: 8472693329408227250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 9
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96b6165c7c416420800000000000000
+      internalID: 2621460555010324122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 31
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19776589f436ac200800000000000000
+      internalID: 201082326880778129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 31
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808928a70cefaa0f0800000000000000
+      internalID: -1104790655923480568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61423d9df2287c300800000000000000
+      internalID: 272329444508771350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6a898e30d67da60800000000000000
+      internalID: 7698741951567800053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 32
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d5da35e4a125910800000000000000
+      internalID: 1824549722752114023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 32
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74063a34c6a27c70800000000000000
+      internalID: 8967413169768498303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082644bfc81ef0e10800000000000000
+      internalID: 2166197941415731840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23ffe5ff06ed0150800000000000000
+      internalID: 5840577247994442539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15fc227fd81ab070800000000000000
+      internalID: 8122832225888433435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15332106620e14900800000000000000
+      internalID: 667060675252728657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222ec673ce52034c0800000000000000
+      internalID: -4309903146921172446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f742d2f15fd81e50800000000000000
+      internalID: 6780414782065494007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 21
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751310cc179646e30800000000000000
+      internalID: 4495834265497448791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 16
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97798b2e095119310800000000000000
+      internalID: 1409931870366898041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 21
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3833cd0edc75cc0800000000000000
+      internalID: -3722280201347693593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 16
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85766e3e37162a10800000000000000
+      internalID: 1884219050203444623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 23
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab53c3b9f372ccad0800000000000000
+      internalID: -2680724524051450438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 23
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aaa6cb1f55299fe0800000000000000
+      internalID: -1181872336789919068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be56f58620f861590800000000000000
+      internalID: -7703812872066865685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eeeef887f943da0800000000000000
+      internalID: -5965968266199372139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e52576ba30a55010800000000000000
+      internalID: 1177023051656930789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5821650ac7f09ad0800000000000000
+      internalID: -2697383729749219234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048bbcc97dfd43f90800000000000000
+      internalID: -6974703805748496320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: handclawattack3-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 22
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5eb72e1809f3400800000000000000
+      internalID: 306122187209434546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      handclawattack3-Sheet_0: 3019931287439005082
+      handclawattack3-Sheet_1: 3168133532769085399
+      handclawattack3-Sheet_10: -6837087575317166516
+      handclawattack3-Sheet_11: -2928992011658786428
+      handclawattack3-Sheet_12: 4615332836100294201
+      handclawattack3-Sheet_13: 5926130437359198682
+      handclawattack3-Sheet_14: 7720789369389552614
+      handclawattack3-Sheet_15: -9177414488132347825
+      handclawattack3-Sheet_16: 922475823769537133
+      handclawattack3-Sheet_17: -3090608554001506140
+      handclawattack3-Sheet_18: -13330825298008369
+      handclawattack3-Sheet_19: -785453463439702677
+      handclawattack3-Sheet_2: 4486559131540500491
+      handclawattack3-Sheet_20: 8472693329408227250
+      handclawattack3-Sheet_21: 2621460555010324122
+      handclawattack3-Sheet_22: 201082326880778129
+      handclawattack3-Sheet_23: -1104790655923480568
+      handclawattack3-Sheet_24: 272329444508771350
+      handclawattack3-Sheet_25: 7698741951567800053
+      handclawattack3-Sheet_26: 1824549722752114023
+      handclawattack3-Sheet_27: 8967413169768498303
+      handclawattack3-Sheet_28: 2166197941415731840
+      handclawattack3-Sheet_29: 5840577247994442539
+      handclawattack3-Sheet_3: -3473240639972300015
+      handclawattack3-Sheet_30: 8122832225888433435
+      handclawattack3-Sheet_31: 667060675252728657
+      handclawattack3-Sheet_32: -4309903146921172446
+      handclawattack3-Sheet_33: 6780414782065494007
+      handclawattack3-Sheet_34: 4495834265497448791
+      handclawattack3-Sheet_35: 1409931870366898041
+      handclawattack3-Sheet_36: -3722280201347693593
+      handclawattack3-Sheet_37: 1884219050203444623
+      handclawattack3-Sheet_38: -2680724524051450438
+      handclawattack3-Sheet_39: -1181872336789919068
+      handclawattack3-Sheet_4: 6190863429252749051
+      handclawattack3-Sheet_40: -7703812872066865685
+      handclawattack3-Sheet_41: -5965968266199372139
+      handclawattack3-Sheet_42: 1177023051656930789
+      handclawattack3-Sheet_43: -2697383729749219234
+      handclawattack3-Sheet_44: -6974703805748496320
+      handclawattack3-Sheet_45: 306122187209434546
+      handclawattack3-Sheet_5: -7409284364075925203
+      handclawattack3-Sheet_6: -6666886863716643026
+      handclawattack3-Sheet_7: 661829438957911762
+      handclawattack3-Sheet_8: -6213833725915902035
+      handclawattack3-Sheet_9: 4703543158945423294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
