@@ -395,7 +395,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4141403115834007958}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
         m_MethodName: ReturnToMenu
         m_Mode: 1
@@ -470,6 +470,17 @@ PrefabInstance:
       addedObject: {fileID: 1799058759059398368}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbd3d66bc9f575646b9d003a7fc67fed, type: 3}
+--- !u!114 &4141403115834007958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7930790033140900432, guid: cbd3d66bc9f575646b9d003a7fc67fed, type: 3}
+  m_PrefabInstance: {fileID: 2920888145423039526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26579521075caa46b7b9627bcfc98a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8731367462455507304 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5883135120038593870, guid: cbd3d66bc9f575646b9d003a7fc67fed, type: 3}
