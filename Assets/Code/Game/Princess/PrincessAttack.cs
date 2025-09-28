@@ -23,7 +23,10 @@ public class PrincessAttack : MonoBehaviour
         AddWallAttack();
         AddWaveAttack();
         AddDiagonalAttack();
+    }
 
+    private void Start()
+    {
         StartCoroutine(RandomAttack());
     }
 
