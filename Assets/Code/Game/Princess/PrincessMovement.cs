@@ -12,6 +12,8 @@ public class PrincessMovement : MonoBehaviour
     [SerializeField] private float minChangeTime = 10;
     [SerializeField] private float maxChangeTime = 15;
 
+    private SpriteRenderer sprite;
+
     public Side side { get; private set; }
 
     private Coroutine coroutine;
@@ -30,10 +32,12 @@ public class PrincessMovement : MonoBehaviour
             if(side == Side.Left)
             {
                 newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
+                sprite.flipX = true;
             }
             else
             {
                 newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.95f, 0.5f));
+                sprite.flipX = false;
             }
             newPos.z = 0;
             transform.position = newPos;
@@ -46,6 +50,9 @@ public class PrincessMovement : MonoBehaviour
         Vector3 newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
         newPos.z = 0;
         transform.position = newPos;
+
+        sprite = GetComponent<SpriteRenderer>();
+        sprite.flipX = true;
     }
 
     private void OnEnable()
