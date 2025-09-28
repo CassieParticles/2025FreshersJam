@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class FrogHealth : HealthComponent
 {
-    GameEvent loseEvent;
 
 
     [SerializeField] float iFrameDuration = 1.0f;
