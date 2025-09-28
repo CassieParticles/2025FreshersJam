@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PrincessAttack : MonoBehaviour
@@ -7,7 +8,7 @@ public class PrincessAttack : MonoBehaviour
     private KissSpawner kissSpawner;
     private CupcakeSpawner cupcakeSpawner;
 
-    private AttackObject attack;
+    private List<AttackObject> attackObjects;
     
     private void Awake()
     {
@@ -16,23 +17,117 @@ public class PrincessAttack : MonoBehaviour
         kissSpawner = GetComponentInChildren<KissSpawner>();
         cupcakeSpawner = GetComponentInChildren<CupcakeSpawner>();
 
-        attack = new AttackObject();
-        attack.AddAttacks(kissSpawner, new AttackObject.AttackData[]
+        attackObjects = new List<AttackObject>();
+
+        AddWallAttack();
+        AddWaveAttack();
+        AddDiagonalAttack();
+
+        attackObjects[2].Attack(movement.side);
+    }
+
+    private void AddWallAttack()
+    {
+        AttackObject attackObject = new AttackObject();
+
+        attackObject.AddAttacks(kissSpawner, new AttackObject.AttackData[]
             {
-                new ( new Vector2(0,0),Vector2.right,3.0f, 0.0f),
-                new ( new Vector2(0,1),Vector2.right,3.0f, 0.0f),
-                new ( new Vector2(0,3),Vector2.right,3.0f, 0.0f),
-                new ( new Vector2(0,4),Vector2.right,3.0f, 0.0f)
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,0.0f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,0.3f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,0.6f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,0.9f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,1.5f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,1.8f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,2.1f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,2.4f),
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,2.7f),
             });
 
-        attack.AddAttacks(cupcakeSpawner, new AttackObject.AttackData[]
+        attackObject.AddAttacks(cupcakeSpawner, new AttackObject.AttackData[]
             {
-                new (new Vector2(0,2),Vector2.right, 3.0f, 0.0f)
+                new AttackObject.AttackData(Vector2.zero,Vector2.right,5.0f,1.2f),
             });
+
+        attackObjects.Add(attackObject);
     }
+
+    private void AddWaveAttack()
+    {
+        //Spawner will need to move up and down
+        AttackObject attackObject = new AttackObject();
+
+        attackObject.AddAttacks(kissSpawner, new AttackObject.AttackData[]
+            {
+                new AttackObject.AttackData(new Vector2(0, 1),Vector2.right,5.0f,0.0f),
+                new AttackObject.AttackData(new Vector2(0,-1),Vector2.right,5.0f,0.3f),
+                new AttackObject.AttackData(new Vector2(0,-1),Vector2.right,5.0f,0.9f),
+                new AttackObject.AttackData(new Vector2(0, 1),Vector2.right,5.0f,1.2f),
+                new AttackObject.AttackData(new Vector2(0, 3),Vector2.right,5.0f,1.5f),
+                new AttackObject.AttackData(new Vector2(0, 3),Vector2.right,5.0f,2.1f),
+                new AttackObject.AttackData(new Vector2(0, 1),Vector2.right,5.0f,2.4f),
+            });
+
+        attackObject.AddAttacks(cupcakeSpawner, new AttackObject.AttackData[]
+            {
+                new AttackObject.AttackData(new Vector2(0,-3),Vector2.right,5.0f,0.6f),
+                new AttackObject.AttackData(new Vector2(0, 5),Vector2.right,5.0f,1.8f),
+            });
+
+        attackObjects.Add(attackObject);
+    }
+
+    private void AddDiagonalAttack()
+    {
+        //Spawner will need to move up and down
+        AttackObject attackObject = new AttackObject();
+
+        float wideAngle = 45;
+        float narrowAngle = 20;
+
+        wideAngle *= Mathf.Deg2Rad;
+        narrowAngle *= Mathf.Deg2Rad;
+
+        attackObject.AddAttacks(kissSpawner, new AttackObject.AttackData[]
+            {
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,0.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,0.2f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,0.4f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,0.6f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,0.8f),
+
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,1.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,1.2f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,1.4f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,1.6f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,1.8f),
+
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,2.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,2.2f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,2.4f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,2.6f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,2.8f),
+
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,3.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,3.2f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,3.4f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,3.6f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,3.8f),
+            });
+
+        attackObject.AddAttacks(cupcakeSpawner, new AttackObject.AttackData[]
+            {
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(wideAngle),Mathf.Sin(wideAngle)),5.0f,1.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-wideAngle),Mathf.Sin(-wideAngle)),5.0f,2.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(narrowAngle),Mathf.Sin(narrowAngle)),5.0f,3.0f),
+                new AttackObject.AttackData(Vector2.zero,new Vector2(Mathf.Cos(-narrowAngle),Mathf.Sin(-narrowAngle)),5.0f,4.0f)
+            });
+
+        attackObjects.Add(attackObject);
+    }
+
 
     private void FixedUpdate()
     {
-        attack.Attack(movement.side);
+        
     }
 }
