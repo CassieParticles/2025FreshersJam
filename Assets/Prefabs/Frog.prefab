@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   DeathEvent: {fileID: 11400000, guid: 28ed0648c39f422439479eb44a28206c, type: 2}
-  health: 0
+  health: 5
   iFrameDuration: 1
 --- !u!50 &1592355172656031158
 Rigidbody2D:
