@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +24,22 @@ public class PrincessAttack : MonoBehaviour
         AddWaveAttack();
         AddDiagonalAttack();
 
-        attackObjects[2].Attack(movement.side);
+        StartCoroutine(RandomAttack());
+    }
+
+    private IEnumerator RandomAttack()
+    {
+        while(true)
+        {
+            int randomAttack = Random.Range(0, attackObjects.Count);
+
+            AttackObject attack = attackObjects[randomAttack];
+
+            attack.Attack(movement.side);
+
+            yield return new WaitForSeconds(3 + attack.attackLength);
+        }
+
     }
 
     private void AddWallAttack()
