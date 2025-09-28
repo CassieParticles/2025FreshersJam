@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 7955697313200254200}
   - component: {fileID: 8819828469186666284}
   - component: {fileID: 5296056371426134414}
+  - component: {fileID: 5370859937021894160}
   m_Layer: 2
   m_Name: Frog
   m_TagString: Untagged
@@ -172,6 +173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   DeathEvent: {fileID: 11400000, guid: 28ed0648c39f422439479eb44a28206c, type: 2}
+  health: 0
+  iFrameDuration: 1
 --- !u!50 &1592355172656031158
 Rigidbody2D:
   serializedVersion: 5
@@ -330,6 +333,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &5370859937021894160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490407984860878236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b168a251cbb7d4f89a3047f9dd1c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputAction: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  returnToMenu: {fileID: 11400000, guid: 1f33ac8f42632cd4f8839ea7a4c429b0, type: 2}
 --- !u!1 &5850747064096356392
 GameObject:
   m_ObjectHideFlags: 0
