@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 7955697313200254200}
   - component: {fileID: 8819828469186666284}
   - component: {fileID: 5296056371426134414}
+  - component: {fileID: 2915542190219647420}
   m_Layer: 2
   m_Name: Frog
   m_TagString: Untagged
@@ -172,6 +173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   DeathEvent: {fileID: 11400000, guid: 28ed0648c39f422439479eb44a28206c, type: 2}
+  health: 0
+  iFrameDuration: 1
 --- !u!50 &1592355172656031158
 Rigidbody2D:
   serializedVersion: 5
@@ -330,6 +333,28 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &2915542190219647420
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490407984860878236}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2af20c5fbc586e4b8c07a7dbe380dec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5850747064096356392
 GameObject:
   m_ObjectHideFlags: 0
