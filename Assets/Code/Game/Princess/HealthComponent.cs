@@ -5,7 +5,7 @@ public class HealthComponent : MonoBehaviour
     [SerializeField] private float maxHealth;
     [SerializeField] private GameEvent DeathEvent;
 
-    public float health { get; private set; }
+    public float health;
 
     private void Awake()
     {

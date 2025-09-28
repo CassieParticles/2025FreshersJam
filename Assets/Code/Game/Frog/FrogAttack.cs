@@ -104,12 +104,12 @@ public class FrogAttack : MonoBehaviour
         tongueWhole.transform.up = attackVector;
         //tongueTip.transform.up = attackVector;
 
-        StartCoroutine(TongueAnimation(rangedDistance));
 
 
         tongueRay = new List<RaycastHit2D>();
         tongueRay.AddRange(Physics2D.RaycastAll(rb.position, attackVector, rangedDistance, LayerMask.NameToLayer("3")));
 
+        StartCoroutine(TongueAnimation(rangedDistance));
 
     }
 
@@ -126,7 +126,7 @@ public class FrogAttack : MonoBehaviour
 
         while (timer < tongueDuration) {
             float percentage = timer / tongueDuration; //Determine how far into the animation we are
-            float sinePos = (percentage * 4 * timeUnit) + timeUnit; //Use 16% to 83% of a full sine wave
+            float sinePos = (percentage * 4 * timeUnit) + timeUnit; //Use 16% to 83% of a full sine wave, as that starts and ends it at exactly half the top height
             float finalCurve = (Mathf.Sin(sinePos) * 2) - 1; //Make it so the curve starts and ends at 0 and peaks at 1, despite not using the full sine wave
 
             float tongueStretch = Mathf.Lerp(0, dist, finalCurve) * 2f; //Lerp using the sine function
@@ -137,12 +137,17 @@ public class FrogAttack : MonoBehaviour
 
             if (timer > tongueDuration / 2) {
                 foreach (RaycastHit2D hit in tongueRay) { //Finds everything that hit the tongue
-                    if (hit && hit.transform.GetComponent<ABulletMovement>() != null) {
-                        ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>(); //See if the hit is a bullet
-                        if (bullet is IEdible) {
-                            ((IEdible)bullet).Eaten(); //Eat it if it is edible
-                            heldFlies = 1;
-                        }
+                    if (hit) {
+                        //Debug.Log("Hit");
+                        if (hit.transform.GetComponent<ABulletMovement>() != null) {
+                            //Debug.Log("Is Bullet");
+                            ABulletMovement bullet = hit.transform.GetComponent<ABulletMovement>(); //See if the hit is a bullet
+                            if (bullet is IEdible edible) {
+                                //Debug.Log("Eating");
+                                edible.Eaten(); //Eat it if it is edible
+                                heldFlies = 1;
+                            }
+                        } 
                     }
                 }
             }
