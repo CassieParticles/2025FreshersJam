@@ -25,22 +25,27 @@ public class PrincessMovement : MonoBehaviour
             yield return new WaitForSeconds(randomTime);
 
             side = (side == Side.Left ? Side.Right : Side.Left);
+            Vector3 newPos;
 
             if(side == Side.Left)
             {
-                transform.position = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
+                newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
             }
             else
             {
-                transform.position = Camera.main.ViewportToWorldPoint(new Vector2(0.95f, 0.5f));
+                newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.95f, 0.5f));
             }
+            newPos.z = 0;
+            transform.position = newPos;
         }
     }
 
     public void Awake()
     {
         side = Side.Left;
-        transform.position = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
+        Vector3 newPos = Camera.main.ViewportToWorldPoint(new Vector2(0.05f, 0.5f));
+        newPos.z = 0;
+        transform.position = newPos;
     }
 
     private void OnEnable()
