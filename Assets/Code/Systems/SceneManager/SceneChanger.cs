@@ -5,7 +5,7 @@ public class SceneChanger : MonoBehaviour
 {
     public void Win()
     {
-        SceneManager.LoadScene("Win");
+        SceneManager.LoadScene("WinScene");
     }
 
     public void ReturnToMenu()
